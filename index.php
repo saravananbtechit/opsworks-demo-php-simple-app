@@ -29,7 +29,7 @@
 </html>
 <?php
 echo "testtttops";
-echo phpinfo();
+
 $servername = "opsworkstestrdsinstance.cj5abbh2tkav.us-west-2.rds.amazonaws.com";
 $username = "itcopsworks";
 $password = "itcopsworks";
@@ -41,5 +41,8 @@ $conn = new mysqli($servername, $username, $password);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-echo "Connected successfully";
+echo "RDS Database Connected successfully";
+
+echo phpinfo();
+
 ?> 
